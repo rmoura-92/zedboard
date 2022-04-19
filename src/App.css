@@ -1,7 +1,6 @@
-.App {
-  text-align: center;
+html {
+  background-color: #111;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +11,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.horse {
+  width: 200px;
+}
+
+.horse > img {
+  width: 100%;
+  height: 100%;
+}
+
+#horses-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
